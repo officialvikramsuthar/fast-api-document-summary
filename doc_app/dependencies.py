@@ -6,8 +6,6 @@ class Settings(BaseSettings):
     mongodb_uri: str
     database_name: str
     predibase_api_key: str
-    username: str = "admin"
-    password: str = "admin"
 
     class Config:
         env_file = ".env"

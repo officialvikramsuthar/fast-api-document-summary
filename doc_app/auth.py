@@ -6,11 +6,7 @@ security = HTTPBasic()
 
 
 def get_current_user(credentials: HTTPBasicCredentials = Depends(security)):
-    settings = get_settings()
-    correct_username = settings.username
-    correct_password = settings.password
-
-    if credentials.username != correct_username or credentials.password != correct_password:
+    if credentials.username != "admin" or credentials.password != "admin":
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Incorrect username or password",
