@@ -22,7 +22,7 @@ This project is a FastAPI application that allows users to upload `.docx`, `.ppt
 ### 1. Clone the repository
 
 
-git clone https://github.com/yourusername/fast-api-document-summary.git
+git clone https://github.com/officialvikramsuthar/fast-api-document-summary.git
 cd fastapi-file-upload-summary
 
 
